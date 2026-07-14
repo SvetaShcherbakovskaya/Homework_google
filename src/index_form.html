@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/styleForm.css">
+</head>
+<body>
+<form action="#" method="get">
+<fieldset id="fieldset">
+    <legend>Personal data</legend>
+    <p>
+        <label for="fName">First name*</label>
+        <input id="fName" name="fistName" type="text" placeholder="Peter" required>
+    </p>
+
+    <p>
+        <label>Last name
+            <input type="text" id="lName" name="lastName" placeholder="Smith">
+        </label>
+    </p>
+    <fieldset id="fieldset1">
+        <p>
+            <label>Telefone:
+                <input type="tell" placeholder="112233" name="tell" required>
+            </label>
+        </p>
+        <p>
+            <label>Number:
+                <input type="number" placeholder="123" name = "num" min="5" max="25" step="3" required>
+            </label>
+
+        </p>
+        <p>
+        <label>Email:
+            <input type="email" placeholder="ggg@gmail.com" name="email" required>
+        </label>
+        </p>
+    </fieldset>
+    <p>
+        <label>Password:
+            <input type="password" placeholder="qqqwwweee" name="password" required>
+        </label>
+    </p>
+
+
+    <p>
+        <label>Male:
+            <input type="radio" name="gender" value="male">
+        </label>
+        <label>Female:</label>
+            <input type="radio" name="gender" value="female">
+    </p>
+
+    <p> Hobby:
+        <label>
+            <input type="checkbox" name="reading">
+            reading
+        </label>
+        <label>
+            <input type="checkbox" name="traveling">
+            traveling
+        </label>
+        <label>
+            <input type="checkbox" name="gaming">
+            gaming
+        </label>
+    </p>
+
+    <p>
+        <label>Language:
+            <select name="lang" id="lang1">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="sp">Spanish</option>
+            </select>
+        </label>
+    </p>
+
+    <p>
+        <label>Date of birth:
+            <input type="date" name="birthday" id="dob">
+        </label>
+    </p>
+
+    <p>
+        <label>Comment:
+            <br>
+            <textarea name="comment" id="cmt" cols="30" rows="10" maxlength="250" minlength="10" required></textarea>
+
+        </label>
+    </p>
+
+</fieldset>
+<button type="submit">Sent</button>
+    <button type="reset">Reset</button>
+    <button type="button">Next</button>
+    <button type="button">Prev</button>
+    <button type = "button" onclick = "alert('Form submitted!')">Alert</button>
+</form>
+</body>
+</html>
